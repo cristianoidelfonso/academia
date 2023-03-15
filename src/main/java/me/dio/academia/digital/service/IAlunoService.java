@@ -15,7 +15,7 @@ public interface IAlunoService {
    */
   Aluno create(AlunoForm form);
 
-  /**
+    /**
    * Retorna um Aluno que está no banco de dados de acordo com seu Id.
    * @param id - id do Aluno que será exibido.
    * @return - Aluno de acordo com o Id fornecido.
@@ -26,7 +26,7 @@ public interface IAlunoService {
    * Retorna todos os Alunos que estão no banco de dados.
    * @return - Uma lista os Alunos que estão salvas no DB.
    */
-  List<Aluno> getAll();
+  List<Aluno> getAll(String dataDeNascimento);
 
   /**
    * Atualiza o Aluno.
